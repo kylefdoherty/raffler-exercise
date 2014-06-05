@@ -1,0 +1,29 @@
+.container
+  .page-header
+    %h1
+      Get Lucky
+      %small Win a date with Kate Beckinsale
+  .row
+    .col-md-9
+      .panel.panel-default
+        .panel-body
+          %form.js-participant-form{ name: "raffler" }
+            .row
+              .col-md-10
+                %input.form-control{ name: "name" }
+              .col-md-2
+                %input.btn.btn-success{ type: 'submit', value: "Add Person" }
+
+      #participants.js-participants{ data: { seed: [{name: "Damon"}, {name: "Felipe" }, { name: "Len Wiseman"}, { name: "Eamon" }].to_json } }
+
+    .col-md-3
+      .row
+        .col-md-12
+          .thumbnail
+            = image_tag "kate.jpg", width: "100%"
+            .caption.text-center
+              = link_to "Who is Kate Beckinsale?", "https://www.google.com/#q=kate+beckinsale", target: "_blank"
+      .row
+        .col-md-12
+          %button.btn.btn-primary.btn-large.form-control.js-pick-winner{ type: "button" } Pick Winner
+

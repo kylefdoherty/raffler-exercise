@@ -1,0 +1,13 @@
+default: &default
+  adapter: postgresql
+  username: <%= `whoami`.chomp %>
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+  database: rafffler_dev
+
+test:
+  <<: *default
+  database: raffler_test
