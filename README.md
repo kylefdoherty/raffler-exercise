@@ -1,7 +1,7 @@
-raffler-exercise
+Raffler-exercise
 ================
 
-A JavaScript exercise mini lecture series to help apprentices and interns get practical JS working knowledge. 
+A JavaScript mini lecture series to help apprentices and interns get practical JS working knowledge, by starting with a raffler that has all code in `$(document).ready()` to object oriented code. 
 
 
 ## Learning Materials 
